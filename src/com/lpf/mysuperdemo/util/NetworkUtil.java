@@ -1,4 +1,4 @@
-package com.lpf.superdemo.util;
+package com.lpf.mysuperdemo.util;
 
 import android.content.Context;
 import android.net.ConnectivityManager;
@@ -6,7 +6,7 @@ import android.net.NetworkInfo;
 
 public class NetworkUtil {
 	/**
-	 * �?��网络状�?，是否有连到网络
+	 * �?��网络状�?，是否有连到网络
 	 * @param context
 	 * @return
 	 */
