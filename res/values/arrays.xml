@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <string-array android:id="@+id/stringarray1" name="demonames">
+        <item>图片类</item>
+        <item>列表类</item>
+        <item>数据操作</item>
+        <item>自定义控件</item>
+    </string-array>
+
+</resources>
