@@ -7,5 +7,18 @@
         <item>数据操作</item>
         <item>自定义控件</item>
     </string-array>
+    
+    <!-- 图片类 -->
+    <string-array android:id="@+id/picture_demos" name="picture_demos">
+        <item>轮播图</item>
+        <item>图片列表ListView</item>
+        <item>图片GridView</item>
+    </string-array>
+    
+     <!-- 数据操作类 -->
+    <string-array android:id="@+id/data_demos" name="data_demos">
+        <item>数据传递</item>
+        <item>数据存储</item>
+    </string-array>
 
 </resources>

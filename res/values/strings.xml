@@ -5,5 +5,9 @@
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
     <string name="my_super_demo">My Super Demo</string>
+    <string name="response_edit_text">输入要返回的数据</string>
+    <string name="btn_request_data">请求数据</string>
+    <string name="btn_response_data">返回数据</string>
+    <string name="edit_text_cannot_empty">输入不能为空</string>
 
 </resources>

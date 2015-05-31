@@ -17,5 +17,15 @@
         <!-- All customizations that are NOT specific to a particular API-level can go here. -->
         <item name="android:windowNoTitle">true</item>  
     </style>
+    
+      <!-- dialog透明背景 -->
+    <style name="Translucent_NoTitle" parent="android:style/Theme.Dialog">
+		<item name="android:windowNoTitle">true</item>
+		<item name="android:background">@android:color/transparent</item>
+		<item name="android:windowBackground">@android:color/transparent</item>
+		<item name="android:colorBackgroundCacheHint">@null</item>
+		<item name="android:backgroundDimEnabled">false</item>
+		<item name="android:windowIsTranslucent">true</item>
+	</style>
 
 </resources>
