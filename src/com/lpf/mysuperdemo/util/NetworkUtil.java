@@ -6,7 +6,7 @@ import android.net.NetworkInfo;
 
 public class NetworkUtil {
 	/**
-	 * �?��网络状�?，是否有连到网络
+	 * 判断是否连接了网络
 	 * @param context
 	 * @return
 	 */

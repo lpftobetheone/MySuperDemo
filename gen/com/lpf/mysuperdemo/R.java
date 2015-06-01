@@ -517,7 +517,7 @@ public final class R {
         public static final int yellow_progressbar=0x7f020007;
     }
     public static final class id {
-        public static final int action_settings=0x7f0a000c;
+        public static final int action_settings=0x7f0a000d;
         public static final int dotLayout=0x7f0a000b;
         public static final int id_autoplayviewpager=0x7f0a0000;
         public static final int id_huodong_webview=0x7f0a0002;
@@ -530,6 +530,7 @@ public final class R {
         public static final int id_request_textview=0x7f0a0006;
         public static final int id_response_edittext=0x7f0a0008;
         public static final int id_response_senddata=0x7f0a0009;
+        public static final int id_webview=0x7f0a000c;
     }
     public static final class layout {
         public static final int activity_autoviewpager=0x7f030000;
@@ -540,7 +541,8 @@ public final class R {
         public static final int activity_requestfordata=0x7f030005;
         public static final int activity_responsefordata=0x7f030006;
         public static final int autoviewpager_layout=0x7f030007;
-        public static final int loading=0x7f030008;
+        public static final int commonwebview=0x7f030008;
+        public static final int loading=0x7f030009;
     }
     public static final class menu {
         public static final int main=0x7f090000;

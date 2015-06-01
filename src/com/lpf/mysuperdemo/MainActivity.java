@@ -10,6 +10,7 @@ import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
 import com.lpf.mysuperdemo.activity.AutoPlayViewPagerActivity;
+import com.lpf.mysuperdemo.activity.CommonWebClientActivity;
 import com.lpf.mysuperdemo.activity.DataDemosActivity;
 import com.lpf.mysuperdemo.activity.PictureDemosActivity;
 import com.lpf.mysuperdemo.adapter.SwingRightInAnimationAdapter;
@@ -63,6 +64,11 @@ public class MainActivity extends Activity {
 				//数据操作
 				case 2:
 					intent.setClass(MainActivity.this,DataDemosActivity.class);
+					startActivity(intent);
+					break;
+					//当前测试
+				case 5:
+					intent.setClass(MainActivity.this,CommonWebClientActivity.class);
 					startActivity(intent);
 					break;
 				default:

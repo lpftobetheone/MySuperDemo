@@ -5,7 +5,9 @@
         <item>图片类</item>
         <item>列表类</item>
         <item>数据操作</item>
+        <item>网络状态</item>
         <item>自定义控件</item>
+        <item>当前测试</item>
     </string-array>
     
     <!-- 图片类 -->
