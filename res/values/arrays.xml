@@ -22,5 +22,11 @@
         <item>数据传递</item>
         <item>数据存储</item>
     </string-array>
+    
+    <!-- 网络状态 -->
+    <string-array android:id="@+id/net_demos" name="net_demos">
+        <item>网络监听</item>
+        <item>下载数据</item>
+    </string-array>
 
 </resources>

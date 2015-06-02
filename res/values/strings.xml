@@ -9,5 +9,6 @@
     <string name="btn_request_data">请求数据</string>
     <string name="btn_response_data">返回数据</string>
     <string name="edit_text_cannot_empty">输入不能为空</string>
+    <string name="netstate_change_textview">网络状态</string>
 
 </resources>
