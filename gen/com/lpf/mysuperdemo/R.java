@@ -13,6 +13,9 @@ public final class R {
          */
         public static final int data_demos=0x7f040002;
         public static final int demonames=0x7f040000;
+        /**  网络状态 
+         */
+        public static final int net_demos=0x7f040003;
         /**  图片类 
          */
         public static final int picture_demos=0x7f040001;
@@ -517,32 +520,34 @@ public final class R {
         public static final int yellow_progressbar=0x7f020007;
     }
     public static final class id {
-        public static final int action_settings=0x7f0a000d;
-        public static final int dotLayout=0x7f0a000b;
+        public static final int action_settings=0x7f0a000e;
+        public static final int dotLayout=0x7f0a000c;
         public static final int id_autoplayviewpager=0x7f0a0000;
         public static final int id_huodong_webview=0x7f0a0002;
-        public static final int id_imageviewPager=0x7f0a000a;
+        public static final int id_imageviewPager=0x7f0a000b;
         public static final int id_list_data_demo=0x7f0a0001;
         public static final int id_list_demos=0x7f0a0004;
-        public static final int id_list_picture_demo=0x7f0a0005;
+        public static final int id_list_picture_demo=0x7f0a0006;
         public static final int id_list_title=0x7f0a0003;
-        public static final int id_request_getdata=0x7f0a0007;
-        public static final int id_request_textview=0x7f0a0006;
-        public static final int id_response_edittext=0x7f0a0008;
-        public static final int id_response_senddata=0x7f0a0009;
-        public static final int id_webview=0x7f0a000c;
+        public static final int id_netstate_change=0x7f0a0005;
+        public static final int id_request_getdata=0x7f0a0008;
+        public static final int id_request_textview=0x7f0a0007;
+        public static final int id_response_edittext=0x7f0a0009;
+        public static final int id_response_senddata=0x7f0a000a;
+        public static final int id_webview=0x7f0a000d;
     }
     public static final class layout {
         public static final int activity_autoviewpager=0x7f030000;
         public static final int activity_datademos=0x7f030001;
         public static final int activity_huodong=0x7f030002;
         public static final int activity_main=0x7f030003;
-        public static final int activity_picturedemos=0x7f030004;
-        public static final int activity_requestfordata=0x7f030005;
-        public static final int activity_responsefordata=0x7f030006;
-        public static final int autoviewpager_layout=0x7f030007;
-        public static final int commonwebview=0x7f030008;
-        public static final int loading=0x7f030009;
+        public static final int activity_net_change=0x7f030004;
+        public static final int activity_picturedemos=0x7f030005;
+        public static final int activity_requestfordata=0x7f030006;
+        public static final int activity_responsefordata=0x7f030007;
+        public static final int autoviewpager_layout=0x7f030008;
+        public static final int commonwebview=0x7f030009;
+        public static final int loading=0x7f03000a;
     }
     public static final class menu {
         public static final int main=0x7f090000;
@@ -555,6 +560,7 @@ public final class R {
         public static final int edit_text_cannot_empty=0x7f070007;
         public static final int hello_world=0x7f070001;
         public static final int my_super_demo=0x7f070003;
+        public static final int netstate_change_textview=0x7f070008;
         public static final int response_edit_text=0x7f070004;
     }
     public static final class style {
