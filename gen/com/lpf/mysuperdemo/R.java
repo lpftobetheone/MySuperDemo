@@ -513,18 +513,29 @@ public final class R {
         public static final int book_reading_toast_bg=0x7f020000;
         public static final int default_img1=0x7f020001;
         public static final int default_img2=0x7f020002;
-        public static final int dot_blur=0x7f020003;
-        public static final int dot_focus=0x7f020004;
-        public static final int ic_launcher=0x7f020005;
-        public static final int loading_01=0x7f020006;
-        public static final int yellow_progressbar=0x7f020007;
+        public static final int delete_selector=0x7f020003;
+        public static final int dot_blur=0x7f020004;
+        public static final int dot_focus=0x7f020005;
+        public static final int ic_launcher=0x7f020006;
+        public static final int loading_01=0x7f020007;
+        public static final int search=0x7f020008;
+        public static final int search_back=0x7f020009;
+        public static final int search_button=0x7f02000a;
+        public static final int search_delete=0x7f02000b;
+        public static final int search_hot=0x7f02000c;
+        public static final int textview_bg=0x7f02000d;
+        public static final int yellow_progressbar=0x7f02000e;
     }
     public static final class id {
-        public static final int action_settings=0x7f0a000e;
-        public static final int dotLayout=0x7f0a000c;
+        public static final int action_settings=0x7f0a0016;
+        public static final int btn_search=0x7f0a0013;
+        public static final int btn_search_back=0x7f0a0012;
+        public static final int dotLayout=0x7f0a0010;
+        public static final int etUserName=0x7f0a0015;
+        public static final int et_search=0x7f0a0014;
         public static final int id_autoplayviewpager=0x7f0a0000;
         public static final int id_huodong_webview=0x7f0a0002;
-        public static final int id_imageviewPager=0x7f0a000b;
+        public static final int id_imageviewPager=0x7f0a000f;
         public static final int id_list_data_demo=0x7f0a0001;
         public static final int id_list_demos=0x7f0a0004;
         public static final int id_list_picture_demo=0x7f0a0006;
@@ -534,7 +545,11 @@ public final class R {
         public static final int id_request_textview=0x7f0a0007;
         public static final int id_response_edittext=0x7f0a0009;
         public static final int id_response_senddata=0x7f0a000a;
-        public static final int id_webview=0x7f0a000d;
+        public static final int id_webview=0x7f0a0011;
+        public static final int search_history_search=0x7f0a000c;
+        public static final int search_historylist=0x7f0a000d;
+        public static final int search_hot_search=0x7f0a000b;
+        public static final int search_listClear=0x7f0a000e;
     }
     public static final class layout {
         public static final int activity_autoviewpager=0x7f030000;
@@ -545,9 +560,13 @@ public final class R {
         public static final int activity_picturedemos=0x7f030005;
         public static final int activity_requestfordata=0x7f030006;
         public static final int activity_responsefordata=0x7f030007;
-        public static final int autoviewpager_layout=0x7f030008;
-        public static final int commonwebview=0x7f030009;
-        public static final int loading=0x7f03000a;
+        public static final int activity_search=0x7f030008;
+        public static final int activity_search_result=0x7f030009;
+        public static final int autoviewpager_layout=0x7f03000a;
+        public static final int commonwebview=0x7f03000b;
+        public static final int loading=0x7f03000c;
+        public static final int search_textview=0x7f03000d;
+        public static final int search_top=0x7f03000e;
     }
     public static final class menu {
         public static final int main=0x7f090000;
@@ -557,11 +576,20 @@ public final class R {
         public static final int app_name=0x7f070000;
         public static final int btn_request_data=0x7f070005;
         public static final int btn_response_data=0x7f070006;
+        public static final int clearHistory=0x7f070011;
         public static final int edit_text_cannot_empty=0x7f070007;
+        public static final int et_search=0x7f07000a;
         public static final int hello_world=0x7f070001;
+        public static final int historysearch=0x7f07000e;
+        public static final int hotsearch=0x7f07000d;
+        public static final int imagebutton=0x7f07000b;
+        public static final int imageview=0x7f07000f;
+        public static final int lastsearch=0x7f07000c;
         public static final int my_super_demo=0x7f070003;
         public static final int netstate_change_textview=0x7f070008;
         public static final int response_edit_text=0x7f070004;
+        public static final int search_back=0x7f070009;
+        public static final int search_is_null=0x7f070010;
     }
     public static final class style {
         /** 
