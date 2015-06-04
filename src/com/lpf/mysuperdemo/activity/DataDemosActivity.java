@@ -36,7 +36,7 @@ public class DataDemosActivity extends Activity implements OnItemClickListener{
 	protected void onCreate(Bundle savedInstanceState) {
 		// TODO Auto-generated method stub
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.activity_datademos);
+		setContentView(R.layout.activity_common_listdemos);
 		
 		initViews();
 		
@@ -49,7 +49,7 @@ public class DataDemosActivity extends Activity implements OnItemClickListener{
 	 */
 	private void initViews() {
 		// TODO Auto-generated method stub
-		mListView = (ListView)this.findViewById(R.id.id_list_data_demo);
+		mListView = (ListView)this.findViewById(R.id.id_common_list_demo);
 		
 	}
 

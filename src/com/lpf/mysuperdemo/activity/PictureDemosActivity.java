@@ -36,7 +36,7 @@ public class PictureDemosActivity extends Activity implements OnItemClickListene
 	protected void onCreate(Bundle savedInstanceState) {
 		// TODO Auto-generated method stub
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.activity_picturedemos);
+		setContentView(R.layout.activity_common_listdemos);
 		
 		initViews();
 		
@@ -49,7 +49,7 @@ public class PictureDemosActivity extends Activity implements OnItemClickListene
 	 */
 	private void initViews() {
 		// TODO Auto-generated method stub
-		mListView = (ListView)this.findViewById(R.id.id_list_picture_demo);
+		mListView = (ListView)this.findViewById(R.id.id_common_list_demo);
 		
 	}
 

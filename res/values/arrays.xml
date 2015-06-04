@@ -28,5 +28,10 @@
         <item>网络监听</item>
         <item>下载数据</item>
     </string-array>
+    
+    <!-- 自定义控件 -->
+    <string-array android:id="@+id/custom_demos" name="custom_demos">
+        <item>自定义带删除按钮的editText</item>
+    </string-array>
 
 </resources>

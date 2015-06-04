@@ -11,10 +11,9 @@ import android.app.Activity;
  *@Title:
  *@Description:
  *@Author:liupf5
- *@Since:2015-5-31
+ *@Since:2015-6-4
  *@Version:1.1.0
  */
-public class BaseActivity extends Activity {
+public class CustomWidgetsDemosActivity extends Activity {
 
-	
 }

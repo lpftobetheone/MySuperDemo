@@ -26,20 +26,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
-        <!-- 图片类 -->
-        <activity
-            android:name="com.lpf.mysuperdemo.activity.PictureDemosActivity"
-            android:screenOrientation="portrait" />
-
-        <!-- 数据操作类 -->
-        <activity
-            android:name="com.lpf.mysuperdemo.activity.DataDemosActivity"
-            android:screenOrientation="portrait" />
-
-        <!-- 图片轮播 -->
-        <activity
-            android:name="com.lpf.mysuperdemo.activity.AutoPlayViewPagerActivity"
+        
+         <activity
+            android:name="com.lpf.mysuperdemo.activity.Test"
             android:screenOrientation="portrait" />
 
         <!-- 公共WebClient类 -->
@@ -47,6 +36,23 @@
             android:name="com.lpf.mysuperdemo.activity.CommonWebClientActivity"
             android:screenOrientation="portrait" />
 
+        <!-- ****************图片类 start**************** -->
+        <activity
+            android:name="com.lpf.mysuperdemo.activity.PictureDemosActivity"
+            android:screenOrientation="portrait" />
+
+        <!-- 图片轮播 -->
+        <activity
+            android:name="com.lpf.mysuperdemo.activity.AutoPlayViewPagerActivity"
+            android:screenOrientation="portrait" />
+        <!-- ****************图片类 end**************** -->
+
+
+        <!-- ****************数据操作类  start**************** -->
+        <!-- 数据操作类 -->
+        <activity
+            android:name="com.lpf.mysuperdemo.activity.DataDemosActivity"
+            android:screenOrientation="portrait" />
         <!-- 请求数据 -->
         <activity
             android:name="com.lpf.mysuperdemo.activity.RequestForDataActivity"
@@ -56,12 +62,24 @@
         <activity
             android:name="com.lpf.mysuperdemo.activity.ResponseForDataActivity"
             android:screenOrientation="portrait" />
-        
+        <!-- ****************数据操作类  end**************** -->
+
+
+        <!-- ****************网络操作类 start**************** -->
         <!-- 网络监听 -->
         <activity
             android:name="com.lpf.mysuperdemo.activity.NetChangeActivity"
             android:screenOrientation="portrait" />
-        
+        <!-- ****************网络操作类 end****************-->
+
+
+        <!-- ****************自定义控件start**************** -->
+        <!-- 自定义带有删除按钮的editText -->
+        <activity
+            android:name="com.lpf.mysuperdemo.activity.CustomDeleteEditTextActivity"
+            android:screenOrientation="portrait" />
+        <!-- ****************自定义控件end**************** -->
+
     </application>
 
 </manifest>

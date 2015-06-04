@@ -3,12 +3,13 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical" >
-    
-     <ListView
-        android:id="@+id/id_list_data_demo"
+
+    <com.lpf.mysuperdemo.views.EditTextWithDel
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:divider="@color/blue"
-        android:dividerHeight="0.5dp" />
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:hint="@string/custom_delete_edittext"
+        android:padding="7dp"
+        android:singleLine="true" />
 
 </LinearLayout>

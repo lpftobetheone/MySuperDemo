@@ -11,9 +11,11 @@ import android.widget.ListView;
 
 import com.lpf.mysuperdemo.activity.AutoPlayViewPagerActivity;
 import com.lpf.mysuperdemo.activity.CommonWebClientActivity;
+import com.lpf.mysuperdemo.activity.CustomDeleteEditTextActivity;
 import com.lpf.mysuperdemo.activity.DataDemosActivity;
 import com.lpf.mysuperdemo.activity.NetChangeActivity;
 import com.lpf.mysuperdemo.activity.PictureDemosActivity;
+import com.lpf.mysuperdemo.activity.Test;
 import com.lpf.mysuperdemo.adapter.SwingRightInAnimationAdapter;
 
 public class MainActivity extends Activity {
@@ -72,6 +74,10 @@ public class MainActivity extends Activity {
 				// 网络操作
 				case 3:
 					intent.setClass(MainActivity.this, NetChangeActivity.class);
+					startActivity(intent);
+					break;
+				case 4:
+					intent.setClass(MainActivity.this, CustomDeleteEditTextActivity.class);
 					startActivity(intent);
 					break;
 				// 当前测试

@@ -9,6 +9,9 @@ package com.lpf.mysuperdemo;
 
 public final class R {
     public static final class array {
+        /**  自定义控件 
+         */
+        public static final int custom_demos=0x7f040004;
         /**  数据操作类 
          */
         public static final int data_demos=0x7f040002;
@@ -513,51 +516,52 @@ public final class R {
         public static final int book_reading_toast_bg=0x7f020000;
         public static final int default_img1=0x7f020001;
         public static final int default_img2=0x7f020002;
-        public static final int delete_selector=0x7f020003;
-        public static final int dot_blur=0x7f020004;
-        public static final int dot_focus=0x7f020005;
-        public static final int ic_launcher=0x7f020006;
-        public static final int loading_01=0x7f020007;
-        public static final int search=0x7f020008;
-        public static final int search_back=0x7f020009;
-        public static final int search_button=0x7f02000a;
-        public static final int search_delete=0x7f02000b;
-        public static final int search_hot=0x7f02000c;
-        public static final int textview_bg=0x7f02000d;
-        public static final int yellow_progressbar=0x7f02000e;
+        public static final int delete=0x7f020003;
+        public static final int delete_gray=0x7f020004;
+        public static final int delete_selector=0x7f020005;
+        public static final int dot_blur=0x7f020006;
+        public static final int dot_focus=0x7f020007;
+        public static final int ic_launcher=0x7f020008;
+        public static final int loading_01=0x7f020009;
+        public static final int search=0x7f02000a;
+        public static final int search_back=0x7f02000b;
+        public static final int search_button=0x7f02000c;
+        public static final int search_delete=0x7f02000d;
+        public static final int search_hot=0x7f02000e;
+        public static final int textview_bg=0x7f02000f;
+        public static final int yellow_progressbar=0x7f020010;
     }
     public static final class id {
-        public static final int action_settings=0x7f0a0016;
-        public static final int btn_search=0x7f0a0013;
-        public static final int btn_search_back=0x7f0a0012;
-        public static final int dotLayout=0x7f0a0010;
-        public static final int etUserName=0x7f0a0015;
-        public static final int et_search=0x7f0a0014;
+        public static final int action_settings=0x7f0a0015;
+        public static final int btn_search=0x7f0a0012;
+        public static final int btn_search_back=0x7f0a0011;
+        public static final int dotLayout=0x7f0a000f;
+        public static final int etUserName=0x7f0a0014;
+        public static final int et_search=0x7f0a0013;
         public static final int id_autoplayviewpager=0x7f0a0000;
+        public static final int id_common_list_demo=0x7f0a0001;
         public static final int id_huodong_webview=0x7f0a0002;
-        public static final int id_imageviewPager=0x7f0a000f;
-        public static final int id_list_data_demo=0x7f0a0001;
+        public static final int id_imageviewPager=0x7f0a000e;
         public static final int id_list_demos=0x7f0a0004;
-        public static final int id_list_picture_demo=0x7f0a0006;
         public static final int id_list_title=0x7f0a0003;
         public static final int id_netstate_change=0x7f0a0005;
-        public static final int id_request_getdata=0x7f0a0008;
-        public static final int id_request_textview=0x7f0a0007;
-        public static final int id_response_edittext=0x7f0a0009;
-        public static final int id_response_senddata=0x7f0a000a;
-        public static final int id_webview=0x7f0a0011;
-        public static final int search_history_search=0x7f0a000c;
-        public static final int search_historylist=0x7f0a000d;
-        public static final int search_hot_search=0x7f0a000b;
-        public static final int search_listClear=0x7f0a000e;
+        public static final int id_request_getdata=0x7f0a0007;
+        public static final int id_request_textview=0x7f0a0006;
+        public static final int id_response_edittext=0x7f0a0008;
+        public static final int id_response_senddata=0x7f0a0009;
+        public static final int id_webview=0x7f0a0010;
+        public static final int search_history_search=0x7f0a000b;
+        public static final int search_historylist=0x7f0a000c;
+        public static final int search_hot_search=0x7f0a000a;
+        public static final int search_listClear=0x7f0a000d;
     }
     public static final class layout {
         public static final int activity_autoviewpager=0x7f030000;
-        public static final int activity_datademos=0x7f030001;
-        public static final int activity_huodong=0x7f030002;
-        public static final int activity_main=0x7f030003;
-        public static final int activity_net_change=0x7f030004;
-        public static final int activity_picturedemos=0x7f030005;
+        public static final int activity_common_listdemos=0x7f030001;
+        public static final int activity_custom_deleteedittext=0x7f030002;
+        public static final int activity_huodong=0x7f030003;
+        public static final int activity_main=0x7f030004;
+        public static final int activity_net_change=0x7f030005;
         public static final int activity_requestfordata=0x7f030006;
         public static final int activity_responsefordata=0x7f030007;
         public static final int activity_search=0x7f030008;
@@ -577,6 +581,7 @@ public final class R {
         public static final int btn_request_data=0x7f070005;
         public static final int btn_response_data=0x7f070006;
         public static final int clearHistory=0x7f070011;
+        public static final int custom_delete_edittext=0x7f070012;
         public static final int edit_text_cannot_empty=0x7f070007;
         public static final int et_search=0x7f07000a;
         public static final int hello_world=0x7f070001;

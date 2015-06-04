@@ -5,7 +5,7 @@
     android:orientation="vertical" >
     
      <ListView
-        android:id="@+id/id_list_picture_demo"
+        android:id="@+id/id_common_list_demo"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:divider="@color/blue"

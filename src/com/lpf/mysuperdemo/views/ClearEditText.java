@@ -15,6 +15,15 @@ import android.widget.EditText;
 
 import com.lpf.mysuperdemo.R;
 
+/**
+ * 
+ *@Title: 自定义搜索输入框内容
+ *@Description:
+ *@Author:liupf5
+ *@Since:2015-6-4
+ *@Version:1.1.0
+ */
+
 public class ClearEditText extends EditText implements OnFocusChangeListener,TextWatcher {
 	  /**
 	   * 删除按钮的引用
