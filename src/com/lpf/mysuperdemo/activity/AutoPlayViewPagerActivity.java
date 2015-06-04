@@ -8,6 +8,7 @@ import android.os.Bundle;
 
 import com.lpf.mysuperdemo.R;
 import com.lpf.mysuperdemo.bean.ScrollPicture;
+import com.lpf.mysuperdemo.constants.Global;
 import com.lpf.mysuperdemo.views.AutoPlayViewPager;
 
 /**
@@ -23,9 +24,7 @@ public class AutoPlayViewPagerActivity extends Activity {
 	private AutoPlayViewPager mAutoPlayViewPager;
 	public List<ScrollPicture> mScrollPictureList = new ArrayList<ScrollPicture>(); // 图片轮播List数据
 	
-	String picUrl[] = {"http://192.168.1.100:8080/jsonProject/images/item01.jpg",
-			"http://192.168.1.100:8080/jsonProject/images/item02.jpg",
-			"http://192.168.1.100:8080/jsonProject/images/item01.jpg"	};
+	String picUrl[] = Global.mAutoPlayUrl;
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {

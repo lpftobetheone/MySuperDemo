@@ -79,6 +79,11 @@ public class PictureDemosActivity extends Activity implements OnItemClickListene
 			intent.setClass(PictureDemosActivity.this, AutoPlayViewPagerActivity.class);
 			startActivity(intent);
 			break;
+		//水平滚动列表
+		case 1:
+			intent.setClass(PictureDemosActivity.this, HorizontalListViewActivity.class);
+			startActivity(intent);
+			break;
 		}
 		
 	}

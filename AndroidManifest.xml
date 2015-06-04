@@ -40,6 +40,10 @@
         <activity
             android:name="com.lpf.mysuperdemo.activity.PictureDemosActivity"
             android:screenOrientation="portrait" />
+        
+         <activity
+            android:name="com.lpf.mysuperdemo.activity.HorizontalListViewActivity"
+            android:screenOrientation="portrait" />
 
         <!-- 图片轮播 -->
         <activity
