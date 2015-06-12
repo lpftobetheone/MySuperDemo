@@ -28,7 +28,7 @@
         </activity>
         
          <activity
-            android:name="com.lpf.mysuperdemo.activity.Test"
+            android:name="com.lpf.mysuperdemo.activity.TestInterface"
             android:screenOrientation="portrait" />
 
         <!-- 公共WebClient类 -->
@@ -82,7 +82,17 @@
         <activity
             android:name="com.lpf.mysuperdemo.activity.CustomDeleteEditTextActivity"
             android:screenOrientation="portrait" />
+        
+         <activity
+            android:name="com.lpf.mysuperdemo.activity.CustomWidgetActivity"
+            android:screenOrientation="portrait" />
+        
         <!-- ****************自定义控件end**************** -->
+        
+        <!-- 当前测试 -->
+          <activity
+            android:name="com.lpf.mysuperdemo.activity.Test"
+            android:screenOrientation="portrait" />
 
     </application>
 

@@ -9,8 +9,6 @@ import android.widget.AdapterView.OnItemClickListener;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
-import com.lpf.mysuperdemo.activity.AutoPlayViewPagerActivity;
-import com.lpf.mysuperdemo.activity.CommonWebClientActivity;
 import com.lpf.mysuperdemo.activity.CustomDeleteEditTextActivity;
 import com.lpf.mysuperdemo.activity.DataDemosActivity;
 import com.lpf.mysuperdemo.activity.NetChangeActivity;
@@ -82,9 +80,9 @@ public class MainActivity extends Activity {
 					break;
 				// 当前测试
 				case 5:
-//					intent.setClass(MainActivity.this,
-//							CommonWebClientActivity.class);
-//					startActivity(intent);
+					intent.setClass(MainActivity.this,
+							Test.class);
+					startActivity(intent);
 					break;
 				default:
 					break;
