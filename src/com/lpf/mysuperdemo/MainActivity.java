@@ -10,6 +10,7 @@ import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
 import com.lpf.mysuperdemo.activity.CustomDeleteEditTextActivity;
+import com.lpf.mysuperdemo.activity.CustomDemosActivity;
 import com.lpf.mysuperdemo.activity.DataDemosActivity;
 import com.lpf.mysuperdemo.activity.NetChangeActivity;
 import com.lpf.mysuperdemo.activity.PictureDemosActivity;
@@ -75,7 +76,7 @@ public class MainActivity extends Activity {
 					startActivity(intent);
 					break;
 				case 4:
-					intent.setClass(MainActivity.this, CustomDeleteEditTextActivity.class);
+					intent.setClass(MainActivity.this, CustomDemosActivity.class);
 					startActivity(intent);
 					break;
 				// 当前测试

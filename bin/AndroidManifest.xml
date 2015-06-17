@@ -16,7 +16,7 @@
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
-        android:theme="@style/AppTheme" >
+        android:theme="@android:style/Theme.Light.NoTitleBar">
         <activity
             android:name=".MainActivity"
             android:label="@string/app_name" >
@@ -78,9 +78,23 @@
 
 
         <!-- ****************自定义控件start**************** -->
+        
+        <!-- 自定义控件DemoList -->
+        <activity
+            android:name="com.lpf.mysuperdemo.activity.CustomDemosActivity"
+            android:screenOrientation="portrait" />
         <!-- 自定义带有删除按钮的editText -->
         <activity
             android:name="com.lpf.mysuperdemo.activity.CustomDeleteEditTextActivity"
+            android:screenOrientation="portrait" />
+        
+         <!-- 自定义弹出对话框 -->
+        <activity
+            android:name="com.lpf.mysuperdemo.activity.CustomDialogActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.lpf.mysuperdemo.activity.CustomDialogShowActivity"
+            android:theme="@style/MyDialogTopRight"
             android:screenOrientation="portrait" />
         
          <activity

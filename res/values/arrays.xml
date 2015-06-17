@@ -9,7 +9,7 @@
         <item>自定义控件</item>
         <item>当前测试</item>
     </string-array>
-    
+
     <!-- 图片类 -->
     <string-array android:id="@+id/picture_demos" name="picture_demos">
         <item>轮播图</item>
@@ -17,22 +17,23 @@
         <item>图片列表ListView</item>
         <item>图片GridView</item>
     </string-array>
-    
-     <!-- 数据操作类 -->
+
+    <!-- 数据操作类 -->
     <string-array android:id="@+id/data_demos" name="data_demos">
         <item>数据传递</item>
         <item>数据存储</item>
     </string-array>
-    
+
     <!-- 网络状态 -->
     <string-array android:id="@+id/net_demos" name="net_demos">
         <item>网络监听</item>
         <item>下载数据</item>
     </string-array>
-    
+
     <!-- 自定义控件 -->
     <string-array android:id="@+id/custom_demos" name="custom_demos">
         <item>自定义带删除按钮的editText</item>
+        <item>自定义弹出对话框Activity</item>
     </string-array>
 
 </resources>
