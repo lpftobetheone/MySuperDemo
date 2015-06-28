@@ -21,7 +21,7 @@
     <!-- 数据操作类 -->
     <string-array android:id="@+id/data_demos" name="data_demos">
         <item>数据传递</item>
-        <item>数据存储</item>
+        <item>从服务器下载数据到SdCard</item>
     </string-array>
 
     <!-- 网络状态 -->

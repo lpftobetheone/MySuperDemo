@@ -4,10 +4,10 @@
  */
 package com.lpf.mysuperdemo.activity;
 
-import com.lpf.mysuperdemo.R;
-
 import android.app.Activity;
 import android.os.Bundle;
+
+import com.lpf.mysuperdemo.R;
 
 /**
  * @Title:
