@@ -8,6 +8,7 @@ import android.app.Activity;
 import android.os.Bundle;
 
 import com.lpf.mysuperdemo.R;
+import com.lpf.mysuperdemo.downloadfile.CustomDBPlace;
 
 /**
  * @Title:
@@ -26,5 +27,8 @@ public class Test extends Activity{
 		// TODO Auto-generated method stub
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.test);
+		
+		CustomDBPlace d  = new CustomDBPlace(this);
+		d.openDatabase();
 	}
 }

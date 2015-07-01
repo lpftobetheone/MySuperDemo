@@ -93,6 +93,12 @@ public class CustomDemosActivity extends Activity implements
 					CustomDialogActivity.class);
 			startActivity(intent);
 			break;
+		// ListView结合RadioButton
+		case 2:
+			intent.setClass(CustomDemosActivity.this,
+					PartnerActivity.class);
+			startActivity(intent);
+			break;
 		}
 
 	}

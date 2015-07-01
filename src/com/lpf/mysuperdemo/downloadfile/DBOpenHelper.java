@@ -5,7 +5,7 @@ import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 
 /**
- * SQLite��������ʵ�ִ������ݿ�ͱ����汾�仯ʱʵ�ֶԱ�����ݿ��Ĳ���
+ * SQLite管理器，实现创建数据库和表，但版本变化时实现对表的数据库表的操作
  *@author Administrator
  */
 
@@ -15,8 +15,8 @@ public class DBOpenHelper extends SQLiteOpenHelper
 	private static final int VERSION=1;
 	
 	/**
-	 * ͨ�����췽��
-	 * @param contextӦ�ó���������Ķ���
+	 * 通过构造方法
+	 * @param context应用程序的上下文对象
 	 */
 	public DBOpenHelper(Context context)
 	{
@@ -26,7 +26,7 @@ public class DBOpenHelper extends SQLiteOpenHelper
 	@Override
 	public void onCreate(SQLiteDatabase db)
 	{
-		// TODO �Զ����ɵķ������ 
+		// TODO 自动生成的方法存根 
 		db.execSQL("CREATE TABLE IF NOT EXISTS filedownlog (id integer primary key autoincrement,"
 				+ "downpath varchar(100),threadid INTEGER,downlength INTEGER)");
 		
@@ -36,7 +36,7 @@ public class DBOpenHelper extends SQLiteOpenHelper
 	@Override
 	public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion)
 	{
-		// TODO �Զ����ɵķ������
+		// TODO 自动生成的方法存根
 		db.execSQL("DROP TABLE IF EXISTS filedownlog");
 		onCreate(db);
 	}

@@ -67,7 +67,12 @@
             android:name="com.lpf.mysuperdemo.activity.ResponseForDataActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.lpf.mysuperdemo.activity.FileDownLoadActivity"
+            android:name="com.lpf.mysuperdemo.activity.DataFileDownLoadActivity"
+            android:screenOrientation="portrait" />
+        
+        <!-- 数据库操作 -->
+        <activity
+            android:name="com.lpf.mysuperdemo.activity.DataDbActivity"
             android:screenOrientation="portrait" />
         <!-- ****************数据操作类  end**************** -->
 
@@ -102,6 +107,10 @@
             android:theme="@style/MyDialogTopRight" />
         <activity
             android:name="com.lpf.mysuperdemo.activity.CustomWidgetActivity"
+            android:screenOrientation="portrait" />
+        
+         <activity
+            android:name="com.lpf.mysuperdemo.activity.PartnerActivity"
             android:screenOrientation="portrait" />
 
         <!-- ****************自定义控件end**************** -->

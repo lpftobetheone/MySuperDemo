@@ -19,9 +19,9 @@ public class Global {
 	//轮播图图片
 	
 	public static final String[] mAutoPlayUrl = {
-		SERVER +"jsonProject/images/item01.jpg",
-		SERVER +"jsonProject/images/item02.jpg",
-		SERVER +"jsonProject/images/item01.jpg"};
+		SERVER +"jsonProject/images/image1.png",
+		SERVER +"jsonProject/images/image2.png",
+		SERVER +"jsonProject/images/image3.png"};
 	
 	//水平滚动图片
 	

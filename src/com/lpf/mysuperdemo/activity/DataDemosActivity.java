@@ -88,8 +88,12 @@ public class DataDemosActivity extends Activity implements OnItemClickListener {
 			break;
 		// 从服务器进行数据下载
 		case 1:
-			intent.setClass(DataDemosActivity.this,
-					FileDownLoadActivity.class);
+			intent.setClass(DataDemosActivity.this, DataFileDownLoadActivity.class);
+			startActivity(intent);
+			break;
+		// 数据库操作
+		case 2:
+			intent.setClass(DataDemosActivity.this, DataDbActivity.class);
 			startActivity(intent);
 			break;
 		}

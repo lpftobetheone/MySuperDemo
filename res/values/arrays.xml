@@ -22,6 +22,7 @@
     <string-array android:id="@+id/data_demos" name="data_demos">
         <item>数据传递</item>
         <item>从服务器下载数据到SdCard</item>
+        <item>SQLite数据库操作</item>
     </string-array>
 
     <!-- 网络状态 -->
@@ -34,6 +35,19 @@
     <string-array android:id="@+id/custom_demos" name="custom_demos">
         <item>自定义带删除按钮的editText</item>
         <item>自定义弹出对话框Activity</item>
+        <item>ListView结合RadioButton</item>
+    </string-array>
+    
+    
+
+    <!-- 界面中用到的数据数组 -->
+    <string-array android:id="@+id/partner_style" name="partner_style">
+        <item>选择1</item>
+        <item>选择2</item>
+        <item>选择3</item>
+        <item>选择4</item>
+        <item>选择5</item>
+        <item>选择6</item>
     </string-array>
 
 </resources>

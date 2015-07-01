@@ -18,26 +18,26 @@ public class FileService
 	}
 	
 	/**
-	 * ��ȡ�ض�URI��ÿ���߳��Ѿ����ص��ļ�����
-	 * threadid�������̵߳�id
-	 * downlength:�����߳����ص����λ��
-	 * downpath:����ǰ�߳����ص���Դ
+	 * 获取特定URI的每条线程已经下载的文件长度
+	 * threadid：代表线程的id
+	 * downlength:代表线程下载的最后位置
+	 * downpath:代表当前线程下载的资源
 	 * @param path
 	 * @return
 	 */
 	public Map<Integer, Integer> getData(String path)
 	{
-		//��ȡ�ɶ�ȡ�����ݿ�����һ��������ڸò������ڲ�ʵ���У��䷵�ص���ʵ�ǿ�д�����ݿ���
+		//获取可读取的数据库句柄，一般情况下在该操作的内部实现中，其返回的其实是可写的数据库句柄
 		SQLiteDatabase db=openHelper.getReadableDatabase();
-		//��������·����ѯ�����߳��������ݣ����ص�Cursorָ���һ����¼֮ǰ
+		//根据下载路径查询所有线程下载数据，返回的Cursor指向第一条记录之前
 		Cursor cursor=db.rawQuery("select threadid,downlength from "
 				+ "filedownlog where downpath=?",new String[]{path} );
-		//����һ����ϣ�����ڴ��ÿ���̵߳��Ѿ����ص��ļ�����		
+		//建立一个哈希表用于存放每条线程的已经下载的文件长度		
 		Map<Integer, Integer> data=new HashMap<Integer, Integer>();
-		//�ӵ�һ����¼��ʼ��ʼ����Cursor����
+		//从第一条记录开始开始遍历Cursor对象
 		while(cursor.moveToNext())
 		{
-			//���߳�ID�͸��߳������صĳ������ý�data��ϣ����
+			//把线程ID和该线程已下载的长度设置进data哈希表中
 			data.put(cursor.getInt(0), cursor.getInt(1));
 			data.put(cursor.getInt(cursor.getColumnIndexOrThrow("threadid")), 
 					cursor.getInt(cursor.getColumnIndexOrThrow("downlength")));			
@@ -47,20 +47,20 @@ public class FileService
 		return data;		
 	}
 	/**
-	 * ����ÿ���߳��Ѿ����ص��ļ�����
-	 * @param path ���ص�·��
-	 * @param map ���ڵ�ID���Ѿ����صĳ��ȵļ���
+	 * 保存每条线程已经下载的文件长度
+	 * @param path 下载的路径
+	 * @param map 现在的ID和已经下载的长度的集合
 	 */
 	public void save(String path,Map<Integer, Integer> map){
-		//��ȡ��д�����ݿ���
+		//获取可写的数据库句柄
 		SQLiteDatabase db=openHelper.getWritableDatabase();
-		//��ʼʳ���Ϊ�˴�Ҫ�����������
+		//开始食物，因为此处要插入多批数据
 		db.beginTransaction();
 		try{
 			for(Map.Entry<Integer, Integer> entry:map.entrySet())
 			{
-				//����for-each�ķ�ʽ�������ݼ���
-				//�����ض�����·�����ض��߳�ID,�Ѿ����ص�����
+				//采用for-each的方式遍历数据集合
+				//插入特定下载路径，特定线程ID,已经下载的数据
 				db.execSQL("insert into filedownlog(downpath,threadid,downlength) values(?,?,?)",
 						new Object[]{path,entry.getKey(),entry.getValue()});
 			}
@@ -74,21 +74,21 @@ public class FileService
 	}
 	
 	/**
-	 * ʵʱ����ÿ���߳��Ѿ����ص��ļ�����
+	 * 实时更新每条线程已经下载的文件长度
 	 * @param path
 	 * @param threadId
 	 * @param pos
 	 */
 	public void update(String path,int threadId,int pos){
 		SQLiteDatabase db=openHelper.getWritableDatabase();
-		//�����ض�����·�����ض��̣߳��Ѿ����ص��ļ�����
+		//更新特定下载路径，特定线程，已经下载的文件长度
 		db.execSQL("update filedownlog set downlength=? where downpath=? "
 				+ "and threadid=?",new Object[]{pos,path,threadId});
 		db.close();
 	}
 	
 	/**
-	 * ���ļ�������ɺ�ɾ����Ӧ�����ؼ�¼
+	 * 当文件下载完成后，删除对应的下载记录
 	 * @param path
 	 */
 	public void delete(String path)

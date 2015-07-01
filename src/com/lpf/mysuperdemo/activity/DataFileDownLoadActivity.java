@@ -30,7 +30,7 @@ import com.lpf.mysuperdemo.downloadfile.FileDownloader;
  * @Since:2015-6-28
  * @Version:1.1.0
  */
-public class FileDownLoadActivity extends Activity implements OnClickListener{
+public class DataFileDownLoadActivity extends Activity implements OnClickListener{
 
 	private static final int PROCESSING = 1;
 	private static final int FAILURE = -1;
@@ -66,12 +66,12 @@ public class FileDownLoadActivity extends Activity implements OnClickListener{
 				int result = (int) (num * 100);
 				resultView.setText(result + "%");
 				if (progressBar.getProgress() == progressBar.getMax()) {
-					Toast.makeText(FileDownLoadActivity.this, "下载完成",
+					Toast.makeText(DataFileDownLoadActivity.this, "下载完成",
 							Toast.LENGTH_LONG).show();
 				}
 				break;
 			case -1:
-				Toast.makeText(FileDownLoadActivity.this, "下载失败",
+				Toast.makeText(DataFileDownLoadActivity.this, "下载失败",
 						Toast.LENGTH_LONG).show();
 				break;
 			}
@@ -133,7 +133,7 @@ public class FileDownLoadActivity extends Activity implements OnClickListener{
 				download(path,saveDir);
 			}else
 			{
-				Toast.makeText(FileDownLoadActivity.this, "SDCard读取错误",
+				Toast.makeText(DataFileDownLoadActivity.this, "SDCard读取错误",
 						Toast.LENGTH_LONG).show();
 			}
 			downloadButton.setEnabled(false);
@@ -197,7 +197,7 @@ public class FileDownLoadActivity extends Activity implements OnClickListener{
 		public void run() {
 			// TODO Auto-generated method stub
 			try{
-				loader = new FileDownloader(FileDownLoadActivity.this,path,saveDir,1);
+				loader = new FileDownloader(DataFileDownLoadActivity.this,path,saveDir,2);
 				progressBar.setMax(loader.getFileSize());
 				loader.download(downloadProgressListener);
 			}catch(Exception e){

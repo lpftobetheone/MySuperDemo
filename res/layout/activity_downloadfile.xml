@@ -22,7 +22,7 @@
         android:layout_alignLeft="@+id/textView1"
         android:layout_below="@+id/textView1"
         android:layout_marginTop="22dp"
-        android:text="http://172.16.70.1:8080/jsonProject/zip/1.jpg" >
+        android:text="http://192.168.191.1:8080/jsonProject/zip/epp-wrap.zip" >
     </EditText>
     <!-- 下载按钮，用于触发下载事件 -->
 
