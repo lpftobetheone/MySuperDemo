@@ -114,12 +114,23 @@
             android:screenOrientation="portrait" />
 
         <!-- ****************自定义控件end**************** -->
+        
+        <!-- ****************框架布局start**************** -->
+         <activity
+            android:name="com.lpf.mysuperdemo.activity.FrameDemosActivity"
+            android:screenOrientation="portrait" />
+         <activity
+            android:name="com.lpf.mysuperdemo.activity.FrameSlidingMenuActivity"
+            android:screenOrientation="portrait" />
+        
+        <!-- ****************框架布局end**************** -->
 
 
         <!-- 当前测试 -->
         <activity
             android:name="com.lpf.mysuperdemo.activity.Test"
             android:screenOrientation="portrait" />
+        
     </application>
 
 </manifest>

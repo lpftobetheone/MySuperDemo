@@ -14,6 +14,7 @@ import com.lpf.mysuperdemo.activity.CustomDemosActivity;
 import com.lpf.mysuperdemo.activity.DataDemosActivity;
 import com.lpf.mysuperdemo.activity.NetChangeActivity;
 import com.lpf.mysuperdemo.activity.PictureDemosActivity;
+import com.lpf.mysuperdemo.activity.FrameSlidingMenuActivity;
 import com.lpf.mysuperdemo.activity.Test;
 import com.lpf.mysuperdemo.adapter.SwingRightInAnimationAdapter;
 
@@ -75,12 +76,19 @@ public class MainActivity extends Activity {
 					intent.setClass(MainActivity.this, NetChangeActivity.class);
 					startActivity(intent);
 					break;
+				//自定义控件
 				case 4:
 					intent.setClass(MainActivity.this, CustomDemosActivity.class);
 					startActivity(intent);
 					break;
-				// 当前测试
+				// 页面框架布局
 				case 5:
+					intent.setClass(MainActivity.this,
+							FrameSlidingMenuActivity.class);
+					startActivity(intent);
+					break;
+					// 当前测试
+				case 6:
 					intent.setClass(MainActivity.this,
 							Test.class);
 					startActivity(intent);

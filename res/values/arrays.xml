@@ -7,6 +7,7 @@
         <item>数据操作</item>
         <item>网络状态</item>
         <item>自定义控件</item>
+        <item>页面框架布局</item>
         <item>当前测试</item>
     </string-array>
 
@@ -38,11 +39,36 @@
         <item>ListView结合RadioButton</item>
     </string-array>
     
+    <!-- 布局框架-->
+    <string-array android:id="@+id/frameDemos" name="frame_demos">
+        <item>SlidingMenu菜单</item>
+        <item>底部RadioButton菜单</item>
+        <item>ListView结合RadioButton</item>
+    </string-array>
+    
     
 
     <!-- 界面中用到的数据数组 -->
     <string-array android:id="@+id/partner_style" name="partner_style">
         <item>选择1</item>
+        <item>选择2</item>
+        <item>选择3</item>
+        <item>选择4</item>
+        <item>选择5</item>
+        <item>选择6</item>
+    </string-array>
+    
+    
+   <string-array name="category_name">
+         <item>选择1</item>
+        <item>选择2</item>
+        <item>选择3</item>
+        <item>选择4</item>
+        <item>选择5</item>
+        <item>选择6</item>
+    </string-array>
+    <string-array name="category_title">
+         <item>选择1</item>
         <item>选择2</item>
         <item>选择3</item>
         <item>选择4</item>
