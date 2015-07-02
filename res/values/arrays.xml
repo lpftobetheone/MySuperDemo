@@ -37,6 +37,7 @@
         <item>自定义带删除按钮的editText</item>
         <item>自定义弹出对话框Activity</item>
         <item>ListView结合RadioButton</item>
+        <item>扫描二维码</item>
     </string-array>
     
     <!-- 布局框架-->

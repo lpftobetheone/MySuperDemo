@@ -4,12 +4,15 @@
  */
 package com.lpf.mysuperdemo.activity;
 
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
 import android.app.Activity;
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 
 import com.lpf.mysuperdemo.R;
-import com.lpf.mysuperdemo.downloadfile.CustomDBPlace;
-
 /**
  * @Title:
  * @Description:
@@ -17,9 +20,11 @@ import com.lpf.mysuperdemo.downloadfile.CustomDBPlace;
  * @Since:2015-6-8
  * @Version:1.1.0
  */
-public class Test extends Activity{
+public class Test extends Activity {
 
-	/* (non-Javadoc)
+	/*
+	 * (non-Javadoc)
+	 * 
 	 * @see android.app.Activity#onCreate(android.os.Bundle)
 	 */
 	@Override
@@ -27,8 +32,30 @@ public class Test extends Activity{
 		// TODO Auto-generated method stub
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.test);
+
+		// 用默认浏览器打开扫描得到的地址
 		
-		CustomDBPlace d  = new CustomDBPlace(this);
-		d.openDatabase();
+		String url = "";
+		if(IsValidUrl(url)){
+			Intent intent = new Intent();
+			intent.setAction("android.intent.action.VIEW");
+			Uri content_url = Uri.parse("http://www.baidu.com");
+			intent.setData(content_url);
+			startActivity(intent);
+		}else{
+			
+		}
+		
+
+	}
+
+	public boolean IsValidUrl(String url) {
+		Pattern pattern = Pattern
+				.compile("http://(([a-zA-z0-9]|-){1,}\\.){1,}[a-zA-z0-9]{1,}-*");
+		Matcher matcher = pattern.matcher(url);
+		if (matcher.find()) {
+			return true;
+		}
+		return false;
 	}
 }

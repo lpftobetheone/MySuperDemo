@@ -95,8 +95,12 @@ public class CustomDemosActivity extends Activity implements
 			break;
 		// ListView结合RadioButton
 		case 2:
-			intent.setClass(CustomDemosActivity.this,
-					PartnerActivity.class);
+			intent.setClass(CustomDemosActivity.this, PartnerActivity.class);
+			startActivity(intent);
+			break;
+		// 扫描二维码
+		case 3:
+			intent.setClass(CustomDemosActivity.this, CaptureActivity.class);
 			startActivity(intent);
 			break;
 		}
