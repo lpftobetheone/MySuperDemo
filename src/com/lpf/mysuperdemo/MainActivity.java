@@ -13,6 +13,7 @@ import com.lpf.mysuperdemo.activity.CustomDeleteEditTextActivity;
 import com.lpf.mysuperdemo.activity.CustomDemosActivity;
 import com.lpf.mysuperdemo.activity.DataDemosActivity;
 import com.lpf.mysuperdemo.activity.FrameDemosActivity;
+import com.lpf.mysuperdemo.activity.H5BackToNativeActivity;
 import com.lpf.mysuperdemo.activity.NetChangeActivity;
 import com.lpf.mysuperdemo.activity.PictureDemosActivity;
 import com.lpf.mysuperdemo.activity.FrameSlidingMenuActivity;
@@ -88,8 +89,14 @@ public class MainActivity extends Activity {
 							FrameDemosActivity.class);
 					startActivity(intent);
 					break;
-					// 当前测试
+				//H5页面跳转
 				case 6:
+					intent.setClass(MainActivity.this,
+							H5BackToNativeActivity.class);
+					startActivity(intent);
+					break;
+				// 当前测试
+				case 7:
 					intent.setClass(MainActivity.this,
 							Test.class);
 					startActivity(intent);

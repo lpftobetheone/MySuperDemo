@@ -143,6 +143,12 @@
             android:name="com.lpf.mysuperdemo.activity.FrameRadioGroupActivity"
             android:screenOrientation="portrait" />
         <!-- ****************框架布局end**************** -->
+        
+        <!-- ****************H5相关操作 start****************-->
+         <activity
+            android:name="com.lpf.mysuperdemo.activity.H5BackToNativeActivity"
+            android:screenOrientation="portrait" />
+        <!-- ****************H5相关操作 end****************-->
 
 
         <!-- 当前测试 -->

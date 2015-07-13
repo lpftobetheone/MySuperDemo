@@ -10,8 +10,9 @@ import java.util.regex.Pattern;
 import android.app.Activity;
 import android.app.ProgressDialog;
 import android.content.Intent;
-import android.net.Uri;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.TextView;
 
 import com.lpf.mysuperdemo.R;
 /**
@@ -49,9 +50,6 @@ public class Test extends Activity {
 //			
 //		}
 		
-		
-		
-
 	}
 
 	public boolean IsValidUrl(String url) {

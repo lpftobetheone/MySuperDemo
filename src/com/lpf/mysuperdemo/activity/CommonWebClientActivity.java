@@ -28,7 +28,7 @@ public class CommonWebClientActivity extends Activity {
 		requestWindowFeature(Window.FEATURE_NO_TITLE);
 		setContentView(R.layout.activity_huodong);
 		
-//		url = getIntent().getStringExtra("detailUrl");
+		url = getIntent().getStringExtra("detailUrl");
 		
 		initWebView(url);
 	}
@@ -46,17 +46,17 @@ public class CommonWebClientActivity extends Activity {
 		
 		web.setDownloadListener(new MyWebViewDownLoadListener());
 		
-//		if(NetworkUtil.isNetworkConnected(this)){
-//			if(url==null||url.equals("")){
-//				web.loadUrl("file:///android_asset/networkerror/404.html");
-//			}else{
-//				web.loadUrl(url);
-//			}
-//		}else{
-//			web.loadUrl("file:///android_asset/networkerror/index.html");
-//		}
+		if(NetworkUtil.isNetworkConnected(this)){
+			if(url==null||url.equals("")){
+				web.loadUrl("file:///android_asset/networkerror/404.html");
+			}else{
+				web.loadUrl(url);
+			}
+		}else{
+			web.loadUrl("file:///android_asset/networkerror/index.html");
+		}
 		
-		web.loadUrl("");
+//		web.loadUrl("");
 		
 		
 	}
