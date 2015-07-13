@@ -4,6 +4,8 @@
  */
 package com.lpf.mysuperdemo.activity;
 
+import com.lpf.mysuperdemo.R;
+
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
@@ -12,8 +14,6 @@ import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemClickListener;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
-
-import com.lpf.mysuperdemo.R;
 
 /**
  * @Title:
@@ -85,6 +85,12 @@ public class FrameDemosActivity extends Activity implements
 		case 0:
 			intent.setClass(FrameDemosActivity.this,
 					FrameSlidingMenuActivity.class);
+			startActivity(intent);
+			break;
+		//RadioButton底部菜单
+		case 1:
+			intent.setClass(FrameDemosActivity.this,
+					FrameRadioGroupActivity.class);
 			startActivity(intent);
 			break;
 		}

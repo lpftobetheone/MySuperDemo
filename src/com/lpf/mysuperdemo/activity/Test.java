@@ -8,6 +8,7 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 import android.app.Activity;
+import android.app.ProgressDialog;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
@@ -21,6 +22,8 @@ import com.lpf.mysuperdemo.R;
  * @Version:1.1.0
  */
 public class Test extends Activity {
+	
+	public ProgressDialog myDialog = null;
 
 	/*
 	 * (non-Javadoc)
@@ -35,16 +38,18 @@ public class Test extends Activity {
 
 		// 用默认浏览器打开扫描得到的地址
 		
-		String url = "";
-		if(IsValidUrl(url)){
-			Intent intent = new Intent();
-			intent.setAction("android.intent.action.VIEW");
-			Uri content_url = Uri.parse("http://www.baidu.com");
-			intent.setData(content_url);
-			startActivity(intent);
-		}else{
-			
-		}
+//		String url = "";
+//		if(IsValidUrl(url)){
+//			Intent intent = new Intent();
+//			intent.setAction("android.intent.action.VIEW");
+//			Uri content_url = Uri.parse("http://www.baidu.com");
+//			intent.setData(content_url);
+//			startActivity(intent);
+//		}else{
+//			
+//		}
+		
+		
 		
 
 	}

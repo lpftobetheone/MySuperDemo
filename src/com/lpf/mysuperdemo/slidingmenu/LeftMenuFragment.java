@@ -37,7 +37,7 @@ public class LeftMenuFragment extends Fragment {
 	public View onCreateView(LayoutInflater inflater, ViewGroup container,
 			Bundle savedInstanceState) {
 		if(null == mView){
-			mView = inflater.inflate(com.lpf.mysuperdemo.R.layout.left_category, container,false);
+			mView = inflater.inflate(R.layout.left_category, container,false);
 			initView();
 			initValidata();
 			bindData();

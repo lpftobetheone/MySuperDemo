@@ -12,6 +12,7 @@ import android.widget.ListView;
 import com.lpf.mysuperdemo.activity.CustomDeleteEditTextActivity;
 import com.lpf.mysuperdemo.activity.CustomDemosActivity;
 import com.lpf.mysuperdemo.activity.DataDemosActivity;
+import com.lpf.mysuperdemo.activity.FrameDemosActivity;
 import com.lpf.mysuperdemo.activity.NetChangeActivity;
 import com.lpf.mysuperdemo.activity.PictureDemosActivity;
 import com.lpf.mysuperdemo.activity.FrameSlidingMenuActivity;
@@ -84,7 +85,7 @@ public class MainActivity extends Activity {
 				// 页面框架布局
 				case 5:
 					intent.setClass(MainActivity.this,
-							FrameSlidingMenuActivity.class);
+							FrameDemosActivity.class);
 					startActivity(intent);
 					break;
 					// 当前测试

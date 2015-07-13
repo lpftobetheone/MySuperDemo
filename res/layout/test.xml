@@ -5,12 +5,21 @@
     android:layout_height="match_parent"
     android:orientation="vertical" >
 
+    <ProgressBar
+        android:id="@+id/myProssBarhandle"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="10dip"
+        android:layout_gravity="center"
+        android:max="100"
+        android:progress="0"
+        android:visibility="gone" >
+    </ProgressBar>
+
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="200dp"
         android:background="#CCCCCC" >
     </ScrollView>
-    
-
 
 </LinearLayout>

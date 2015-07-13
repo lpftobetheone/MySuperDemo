@@ -139,7 +139,9 @@
          <activity
             android:name="com.lpf.mysuperdemo.activity.FrameSlidingMenuActivity"
             android:screenOrientation="portrait" />
-        
+          <activity
+            android:name="com.lpf.mysuperdemo.activity.FrameRadioGroupActivity"
+            android:screenOrientation="portrait" />
         <!-- ****************框架布局end**************** -->
 
 

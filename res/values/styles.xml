@@ -41,5 +41,19 @@
          <item name="android:activityCloseEnterAnimation">@anim/scale_in</item>
         <item name="android:activityCloseExitAnimation">@anim/scale_out</item>
     </style>
+    
+        <style name="RadioType">
+        <item name="android:layout_weight">1.0</item>
+        <item name="android:layout_width">@dimen/radiotype_width</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">@dimen/radiotype_text_size</item>
+        <item name="android:textColor">@color/menu_text_color</item>
+        <item name="android:layout_margin">@dimen/radiotype_margin</item>
+        <item name="android:paddingTop">@dimen/radiotype_padding</item>
+        <item name="android:paddingBottom">@dimen/radiotype_padding</item>
+        <item name="android:background">@drawable/menu_back_selector</item>
+        <item name="android:button">@null</item>
+    </style>
 
 </resources>
