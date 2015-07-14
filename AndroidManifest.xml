@@ -129,6 +129,11 @@
         <activity
             android:name="com.lpf.mysuperdemo.qrcode.ResultActivity"
             android:screenOrientation="portrait" />
+        
+        <!-- listView加载更多 -->
+        <activity
+            android:name="com.lpf.mysuperdemo.activity.CustomListViewLoadMoreActivity"
+            android:screenOrientation="portrait" />
 
         <!-- ****************自定义控件end**************** -->
         

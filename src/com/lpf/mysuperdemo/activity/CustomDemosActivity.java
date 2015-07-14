@@ -103,6 +103,11 @@ public class CustomDemosActivity extends Activity implements
 			intent.setClass(CustomDemosActivity.this, CaptureActivity.class);
 			startActivity(intent);
 			break;
+		// ListView加载更多
+		case 4:
+			intent.setClass(CustomDemosActivity.this, CustomListViewLoadMoreActivity.class);
+			startActivity(intent);
+			break;
 		}
 
 	}

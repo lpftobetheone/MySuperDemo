@@ -6,7 +6,7 @@
         <item>列表类</item>
         <item>数据操作</item>
         <item>网络状态</item>
-        <item>自定义控件</item>
+        <item>常用控件结合</item>
         <item>页面框架布局</item>
         <item>H5界面跳转</item>
         <item>当前测试</item>
@@ -39,6 +39,7 @@
         <item>自定义弹出对话框Activity</item>
         <item>ListView结合RadioButton</item>
         <item>扫描二维码</item>
+        <item>ListView动态加载更多</item>
     </string-array>
     
     <!-- 布局框架-->
