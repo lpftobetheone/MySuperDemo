@@ -40,6 +40,7 @@
         <item>ListView结合RadioButton</item>
         <item>扫描二维码</item>
         <item>ListView动态加载更多</item>
+        <item>搜索列表</item>
     </string-array>
     
     <!-- 布局框架-->

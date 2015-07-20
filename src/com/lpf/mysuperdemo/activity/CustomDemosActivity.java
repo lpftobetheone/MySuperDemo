@@ -108,6 +108,12 @@ public class CustomDemosActivity extends Activity implements
 			intent.setClass(CustomDemosActivity.this, CustomListViewLoadMoreActivity.class);
 			startActivity(intent);
 			break;
+		//搜索列表
+		case 5:
+			intent.setClass(CustomDemosActivity.this, CustomSearchActivity.class);
+			startActivity(intent);
+			break;
+			
 		}
 
 	}

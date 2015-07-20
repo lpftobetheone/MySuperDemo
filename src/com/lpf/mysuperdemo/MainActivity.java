@@ -17,6 +17,7 @@ import com.lpf.mysuperdemo.activity.H5BackToNativeActivity;
 import com.lpf.mysuperdemo.activity.NetChangeActivity;
 import com.lpf.mysuperdemo.activity.PictureDemosActivity;
 import com.lpf.mysuperdemo.activity.FrameSlidingMenuActivity;
+import com.lpf.mysuperdemo.activity.CustomSearchActivity;
 import com.lpf.mysuperdemo.activity.Test;
 import com.lpf.mysuperdemo.adapter.SwingRightInAnimationAdapter;
 

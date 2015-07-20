@@ -134,6 +134,14 @@
         <activity
             android:name="com.lpf.mysuperdemo.activity.CustomListViewLoadMoreActivity"
             android:screenOrientation="portrait" />
+        
+        <!-- 搜索列表页面 -->
+        <activity
+            android:name="com.lpf.mysuperdemo.activity.CustomSearchActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.lpf.mysuperdemo.activity.CustomSearchResultActivity"
+            android:screenOrientation="portrait" />
 
         <!-- ****************自定义控件end**************** -->
         
