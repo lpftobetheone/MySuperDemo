@@ -36,7 +36,7 @@ public class Test extends Activity {
 		// TODO Auto-generated method stub
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.test);
-		//haha
+		
 
 		// 用默认浏览器打开扫描得到的地址
 		
